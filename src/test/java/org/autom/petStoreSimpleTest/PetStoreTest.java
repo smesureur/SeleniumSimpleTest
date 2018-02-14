@@ -18,8 +18,9 @@ public class PetStoreTest {
 		System.setProperty("webdriver.gecko.driver", "C:\\FORMATION\\SeleniumWebDriver\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver(options);
 		
+		String peon = System.getProperty("Navigateur");
 		
-		System.out.println(System.getProperty("Navigateur"));
+		System.out.println(peon);
 		driver.get("http://localhost:8087/jpetstore/");
 		WebElement link = driver.findElement(By.xpath("//div[@id='Content']/p[1]/a[1]"));
 
