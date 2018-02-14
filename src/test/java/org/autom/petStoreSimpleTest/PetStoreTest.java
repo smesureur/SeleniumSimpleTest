@@ -6,13 +6,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 
 public class PetStoreTest {
 	
 	@Test
 	public void test() throws Exception {
+		FirefoxOptions options = new FirefoxOptions().setProfile(new FirefoxProfile());
+		options.addPreference("browser.tabs.remote.autostart", false);
 		System.setProperty("webdriver.gecko.driver", "C:\\FORMATION\\SeleniumWebDriver\\geckodriver.exe");
-		WebDriver driver = new FirefoxDriver();
+		WebDriver driver = new FirefoxDriver(options);
 		
 		
 		System.out.println(System.getProperty("Navigateur"));
