@@ -25,6 +25,7 @@ public class PetStoreTest {
 		
 		Assert.assertTrue(logo.isDisplayed());
 		
+		driver.close();
 		/*List<WebElement> sideLinks;
 		WebElement sideCatsLink = null;
 		List<WebElement> lines;
