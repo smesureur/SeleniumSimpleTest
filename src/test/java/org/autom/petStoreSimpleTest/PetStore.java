@@ -32,7 +32,7 @@ public class PetStore {
 		
 		driver.get("http://localhost:8087/jpetstore/actions/Catalog.action");
 		
-		// Récupération et click sur le lien vers la section chats depuis la sidebar
+		// Récupération et click sur le lien vers la section chats depuis la sidebar -> il va falloir corriger cette portion
 		sideLinks = driver.findElements(By.xpath("//div[@id='SidebarContent']/a"));
 		*/
 		/*for (WebElement curlink : sideLinks) {
